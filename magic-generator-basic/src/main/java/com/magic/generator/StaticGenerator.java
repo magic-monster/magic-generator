@@ -17,7 +17,7 @@ public class StaticGenerator {
     public static void main(String[] args) {
         //获取整个项目的根路径
         String projectPath = System.getProperty("user.dir");
-        System.out.println(projectPath);
+//        System.out.println(projectPath);
         //输入路径
         String inputPath = projectPath + File.separator +"magic-generator-demo-projects"+ File.separator +"acm-template";
         //输出路径
@@ -62,7 +62,7 @@ public class StaticGenerator {
     private static void copyFileByRecursive(File inputFile, File outputFile) throws IOException {
         //区分是文件还是目录
         if (inputFile.isDirectory()){
-            System.out.println(inputFile.getName());
+//            System.out.println(inputFile.getName());
             File destOutputFile = new File(outputFile, inputFile.getName());
             //如果是目录，首先创建目标目录
             if (!destOutputFile.exists()){
